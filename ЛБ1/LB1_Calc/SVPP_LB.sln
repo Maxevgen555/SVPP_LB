@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36109.1 d17.14
+VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB1_Calc", "LB1_Calc.csproj", "{27BE4E2D-25F6-4E01-8A0A-F339FA24D356}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB1_Conv", "..\LB1_Conv\LB1_Conv.csproj", "{C9E939ED-8B22-468D-8A06-D4DEAB3262CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB2_Driver", "..\..\ЛБ2\LB2_Driver\LB2_Driver.csproj", "{0B40C744-A121-4F6C-A14D-0CC29C80DCA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C9E939ED-8B22-468D-8A06-D4DEAB3262CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E939ED-8B22-468D-8A06-D4DEAB3262CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E939ED-8B22-468D-8A06-D4DEAB3262CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B40C744-A121-4F6C-A14D-0CC29C80DCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B40C744-A121-4F6C-A14D-0CC29C80DCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B40C744-A121-4F6C-A14D-0CC29C80DCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B40C744-A121-4F6C-A14D-0CC29C80DCA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
