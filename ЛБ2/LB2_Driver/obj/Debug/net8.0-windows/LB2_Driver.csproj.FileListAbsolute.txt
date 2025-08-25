@@ -1,12 +1,4 @@
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\fon.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto1.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto2.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto3.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto4.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto5.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto6.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto7.jpg
-D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto8.jpg
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\LB2_Driver.exe
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\LB2_Driver.deps.json
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\LB2_Driver.runtimeconfig.json
@@ -29,3 +21,12 @@ D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\obj
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\obj\Debug\net8.0-windows\LB2_Driver.genruntimeconfig.cache
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\obj\Debug\net8.0-windows\ref\LB2_Driver.dll
 D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\foto0.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\obj\Debug\net8.0-windows\LB2_Driver.sourcelink.json
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\1.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\2.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\3.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\4.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\5.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\6.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\7.jpg
+D:\STUDY\40322_БГУИР\2025_3\СВПП_курсов\ЛБ\ЛБ2\LB2_Driver\bin\Debug\net8.0-windows\images\8.jpg

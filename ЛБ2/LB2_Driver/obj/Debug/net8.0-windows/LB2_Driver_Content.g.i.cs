@@ -10,13 +10,13 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/fon.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto0.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto1.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto2.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto3.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto4.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto5.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto6.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto7.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/foto8.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/1.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/2.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/3.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/4.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/5.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/6.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/7.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/8.jpg")]
 
 

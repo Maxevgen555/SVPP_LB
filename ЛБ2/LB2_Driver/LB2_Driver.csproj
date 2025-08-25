@@ -11,14 +11,6 @@
   <ItemGroup>
     <None Remove="images\fon.jpg" />
     <None Remove="images\foto0.jpg" />
-    <None Remove="images\foto1.jpg" />
-    <None Remove="images\foto2.jpg" />
-    <None Remove="images\foto3.jpg" />
-    <None Remove="images\foto4.jpg" />
-    <None Remove="images\foto5.jpg" />
-    <None Remove="images\foto6.jpg" />
-    <None Remove="images\foto7.jpg" />
-    <None Remove="images\foto8.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,28 +20,28 @@
     <Content Include="images\foto0.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto1.jpg">
+    <Content Include="images\1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto2.jpg">
+    <Content Include="images\2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto3.jpg">
+    <Content Include="images\3.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto4.jpg">
+    <Content Include="images\4.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto5.jpg">
+    <Content Include="images\5.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto6.jpg">
+    <Content Include="images\6.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto7.jpg">
+    <Content Include="images\7.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\foto8.jpg">
+    <Content Include="images\8.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
