@@ -73,7 +73,7 @@ namespace LB2_CombatUnitCard
         private void BtnLoad_Click(object sender, RoutedEventArgs e)
         {
 
-            // Создаем фиктивные данные (аналогично NewDriver() в задании 1)
+            // Создаем случайные данные 
             Random random = new Random();
             string[] names = { "Элитный воин", "Магический стрелок", "Тяжелый пехотинец", "Летучий разведчик" };
             string[] types = { "Пехота", "Кавалерия", "Артиллерия", "Маги" };
@@ -92,7 +92,7 @@ namespace LB2_CombatUnitCard
             currentUnit.Abilities.Clear();
             for (int i = 0; i < allAbilities.Length; i++)
             {
-                if (random.Next(2) == 0) // 50% chance
+                if (random.Next(2) == 0) 
                 {
                     currentUnit.Abilities.Add(allAbilities[i]);
                 }

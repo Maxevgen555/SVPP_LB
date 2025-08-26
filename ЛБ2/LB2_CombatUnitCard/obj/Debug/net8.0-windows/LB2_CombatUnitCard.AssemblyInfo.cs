@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LB2_CombatUnitCard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95552cef9adc1de06d0d887f1244b1b30e374de6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05186558252675dce83e9b14d26f69cf20b93b3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LB2_CombatUnitCard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LB2_CombatUnitCard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

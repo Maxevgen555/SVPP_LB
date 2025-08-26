@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB2_Driver", "..\..\ЛБ2\L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB2_CombatUnitCard", "..\..\ЛБ2\LB2_CombatUnitCard\LB2_CombatUnitCard.csproj", "{038C3FA9-03C6-4B6B-A1F2-F355BCA10CC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB3_DriverValid", "..\..\ЛБ3\LB3_DriverValid\LB3_DriverValid.csproj", "{918C7B43-F2FF-4F89-BA6D-3128F489B303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{038C3FA9-03C6-4B6B-A1F2-F355BCA10CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038C3FA9-03C6-4B6B-A1F2-F355BCA10CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{038C3FA9-03C6-4B6B-A1F2-F355BCA10CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918C7B43-F2FF-4F89-BA6D-3128F489B303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918C7B43-F2FF-4F89-BA6D-3128F489B303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918C7B43-F2FF-4F89-BA6D-3128F489B303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918C7B43-F2FF-4F89-BA6D-3128F489B303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
