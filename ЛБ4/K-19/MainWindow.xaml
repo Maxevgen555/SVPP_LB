@@ -1,0 +1,26 @@
+﻿<Window x:Class="K19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="K-19: Стрельба из подводной лодки" Height="500" Width="700"
+        xmlns:local="clr-namespace:K19GameLibrary">
+
+    <DockPanel>
+        <!-- Панель управления -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnStart" Content="Старт" Width="80" Margin="5" Click="BtnStart_Click"/>
+            <Button x:Name="btnPause" Content="Пауза" Width="80" Margin="5" Click="BtnPause_Click"/>
+            <Button x:Name="btnReset" Content="Сброс" Width="80" Margin="5" Click="BtnReset_Click"/>
+            <Button x:Name="btnLeft" Content="← Влево" Width="80" Margin="5" Click="BtnLeft_Click"/>
+            <Button x:Name="btnRight" Content="Вправо →" Width="80" Margin="5" Click="BtnRight_Click"/>
+            <Button x:Name="btnFire" Content="Пуск!" Width="80" Margin="5" Click="BtnFire_Click"/>
+        </StackPanel>
+
+        <!-- Информационная панель -->
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <TextBlock x:Name="txtInfo" Text="Готов к игре..." Margin="10" FontSize="14" FontWeight="Bold"/>
+        </StackPanel>
+
+        <!-- Игровое поле -->
+        <ContentControl x:Name="gameControl" Content="{Binding}"/>
+    </DockPanel>
+</Window>

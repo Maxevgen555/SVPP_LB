@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LB2_Driver")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05186558252675dce83e9b14d26f69cf20b93b3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd31011b81749e785a6a1c448482b8d53b438050")]
 [assembly: System.Reflection.AssemblyProductAttribute("LB2_Driver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LB2_Driver")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
