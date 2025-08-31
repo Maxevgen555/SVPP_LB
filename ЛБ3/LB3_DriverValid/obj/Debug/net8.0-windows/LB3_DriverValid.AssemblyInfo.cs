@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LB3_DriverValid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c897434138321392bcb18a11c990b31e35cc718")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23953e75776da448e44a6a57ed7f5be2297c5df6")]
 [assembly: System.Reflection.AssemblyProductAttribute("LB3_DriverValid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LB3_DriverValid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

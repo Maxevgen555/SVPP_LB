@@ -79,7 +79,7 @@ namespace LB5 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LB5;component/windowshape.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LB5;V1.0.0.0;component/windowshape.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WindowShape.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
