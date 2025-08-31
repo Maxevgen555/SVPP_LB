@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB3_DriverValid", "..\..\Л
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K-19", "..\..\ЛБ4\K-19\K-19.csproj", "{DF4E278C-CFF4-4D82-A6AE-41D67299AB4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB5", "..\..\ЛБ5\LB5\LB5.csproj", "{92557B8F-F650-43D9-AA89-F82FD9713745}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{DF4E278C-CFF4-4D82-A6AE-41D67299AB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF4E278C-CFF4-4D82-A6AE-41D67299AB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF4E278C-CFF4-4D82-A6AE-41D67299AB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92557B8F-F650-43D9-AA89-F82FD9713745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92557B8F-F650-43D9-AA89-F82FD9713745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92557B8F-F650-43D9-AA89-F82FD9713745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92557B8F-F650-43D9-AA89-F82FD9713745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

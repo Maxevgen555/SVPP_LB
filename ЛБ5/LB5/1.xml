@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Thickness>1</Thickness>
+  <Background>
+    <A>255</A>
+    <R>173</R>
+    <G>255</G>
+    <B>47</B>
+    <ScA>1</ScA>
+    <ScR>0.4178851</ScR>
+    <ScG>1</ScG>
+    <ScB>0.02842604</ScB>
+  </Background>
+  <Foreground>
+    <A>255</A>
+    <R>189</R>
+    <G>183</G>
+    <B>107</B>
+    <ScA>1</ScA>
+    <ScR>0.50888133</ScR>
+    <ScG>0.4735315</ScG>
+    <ScB>0.14702727</ScB>
+  </Foreground>
+  <Width>100</Width>
+  <Height>100</Height>
+</Shape>

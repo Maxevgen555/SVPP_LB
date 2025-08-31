@@ -84,7 +84,7 @@ namespace K19GameLibrary {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/K-19;component/shiptorpedogame.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/K-19;V1.0.0.0;component/shiptorpedogame.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ShipTorpedoGame.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
