@@ -32,14 +32,20 @@ namespace LB5
             commandBindingSave.Command = ApplicationCommands.Save;
             commandBindingSave.Executed += save;
             menuItemSave.CommandBindings.Add(commandBindingSave);
+            buttonSave.CommandBindings.Add(commandBindingSave);
             commandBindingSave.CanExecute += canExecute;
-            //buttonSave.CommandBindings.Add(commandBindingSave);
-            
+
             CommandBinding commandBindingOpen = new CommandBinding();
             commandBindingOpen.Command = ApplicationCommands.Open;
             commandBindingOpen.Executed += open;
             menuItemOpen.CommandBindings.Add(commandBindingOpen);
-            //buttonOpen.CommandBindings.Add(commandBindingOpen);
+            buttonOpen.CommandBindings.Add(commandBindingOpen);
+
+            CommandBinding commandBindingClose = new CommandBinding();
+            commandBindingClose.Command = ApplicationCommands.Close;
+            commandBindingClose.Executed += close;
+            menuItemExit.CommandBindings.Add(commandBindingClose);
+            buttonExit.CommandBindings.Add(commandBindingClose);
 
         }
 
@@ -64,6 +70,11 @@ namespace LB5
             MessageBox.Show("справка по приложению");
         }
 
+        private void close(object sender, ExecutedRoutedEventArgs e)
+        {
+            this.Close();
+        }
+
         private void MenuItemShape_Click(object sender, RoutedEventArgs e)
         {
             WindowShape windowShape = new WindowShape();
@@ -75,8 +86,6 @@ namespace LB5
         private void canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (shape == null) return;
-            //System.Windows.Point clickPosition = e.GetPosition(canvas);
-            //Ellipse ellipse = CreateEllipse(clickPosition);
             shape.draw(canvas, e.GetPosition(canvas));
         }
 

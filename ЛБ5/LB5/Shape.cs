@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Xml.Serialization;
 using Color = System.Windows.Media.Color;
@@ -34,28 +35,62 @@ namespace LB5
         public Color? Background { get; set; }
         public Color? Foreground { get; set; }
 
-        public int Width { get; set; } = 10;
-        public int Height { get; set; } = 10;
+        public int Width { get; set; } = 0;
+        public int Height { get; set; } = 0;
 
         public void draw(Canvas canvas, System.Windows.Point point)
         {
-            Polygon polygon = new Polygon();
-            polygon.Points.Add(point);
-            polygon.Points.Add(new System.Windows.Point(point.X + Width, point.Y));
-            polygon.Points.Add(new System.Windows.Point(point.X, point.Y + Height));
-            polygon.Fill = new SolidColorBrush((Color)Background);
-            polygon.Stroke = new SolidColorBrush((Color)Foreground);
-            polygon.StrokeThickness = Thickness;
-            canvas.Children.Add(polygon);
+            Ellipse ellipse = new Ellipse();
+            ellipse.Width = Width;
+            ellipse.Height = Height;
+            ellipse.Margin = new Thickness(point.X - Width / 2, point.Y - Height / 2, 0, 0);
 
-            //Ellipse ellipse = new Ellipse();
-            //ellipse.Width = Width;
-            //ellipse.Height = Height;
-            //Margin = new Thickness(position.X - Width / 2, position.Y - Height / 2, 0, 0)
-            //ellipse.Fill = new SolidColorBrush((Color)Background);
-            //ellipse.Stroke = new SolidColorBrush((Color)Foreground);
-            //ellipse.StrokeThickness = Thickness;
-            //canvas.Children.Add(ellipse);
+            // Создаем радиальный градиент
+            RadialGradientBrush gradient = new RadialGradientBrush();
+            gradient.GradientStops.Add(new GradientStop((Color)Background, 0));
+            gradient.GradientStops.Add(new GradientStop((Color)Foreground, 1));
+            gradient.RadiusX = 0.7;
+            gradient.RadiusY = 0.7;
+            gradient.Center = new System.Windows.Point(0.5, 0.5);
+
+            ellipse.Fill = gradient;
+            ellipse.Stroke = new SolidColorBrush((Color)Foreground);
+            ellipse.StrokeThickness = Thickness;
+
+            // Добавляем анимацию смещения стоп-точки
+            DoubleAnimation animation = new DoubleAnimation();
+            animation.To = 0.3;
+            animation.Duration = TimeSpan.FromSeconds(2);
+            animation.AutoReverse = true;
+            animation.RepeatBehavior = RepeatBehavior.Forever;
+
+            gradient.GradientStops[1].BeginAnimation(GradientStop.OffsetProperty, animation);
+
+            canvas.Children.Add(ellipse);
+
+            // Добавляем перечеркивающие диагональные линии (в пределах эллипса)
+            double centerX = point.X;
+            double centerY = point.Y;
+            double halfWidth = Width / 2;
+            double halfHeight = Height / 2;
+
+            Line diagonalLine1 = new Line();
+            diagonalLine1.X1 = centerX - halfWidth * 0.7;
+            diagonalLine1.Y1 = centerY - halfHeight * 0.7;
+            diagonalLine1.X2 = centerX + halfWidth * 0.7;
+            diagonalLine1.Y2 = centerY + halfHeight * 0.7;
+            diagonalLine1.Stroke = new SolidColorBrush((Color)Foreground);
+            diagonalLine1.StrokeThickness = Thickness;
+
+            Line diagonalLine2 = new Line();
+            diagonalLine2.X1 = centerX + halfWidth * 0.7;
+            diagonalLine2.Y1 = centerY - halfHeight * 0.7;
+            diagonalLine2.X2 = centerX - halfWidth * 0.7;
+            diagonalLine2.Y2 = centerY + halfHeight * 0.7;
+            diagonalLine2.Stroke = new SolidColorBrush((Color)Foreground);
+            diagonalLine2.StrokeThickness = Thickness;
+            canvas.Children.Add(diagonalLine1);
+            canvas.Children.Add(diagonalLine2);
         }
         public void save()
         {
@@ -68,6 +103,7 @@ namespace LB5
                 serializer.Serialize(file, this);
             }
         }
+
         public static Shape load()
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
@@ -81,9 +117,10 @@ namespace LB5
             }
             return shape;
         }
+
         public override string? ToString()
         {
-            return $"Thickness = {Thickness}  Background = {Background}  Foreground = {Foreground}\n +" +
+            return $"Thickness = {Thickness}  Background = {Background}  Foreground = {Foreground}\n" +
                 $"Width = {Width}  Height = {Height}";
         }
     }

@@ -17,42 +17,41 @@
             <MenuItem x:Name="menuItemExit" Header="Exit" Command="Close" />
         </Menu>
         <ToolBar DockPanel.Dock="Top" Height="40">
-            <Button x:Name="buttonHelp" Content="?" Command="Help"/>
+            <Button x:Name="buttonShape" Content="◯" ToolTip="Shape" Click="MenuItemShape_Click"/>
+            <Button x:Name="buttonSave" Content="💾" Command="Save"/>
+            <Button x:Name="buttonOpen" Content="📂" Command="Open"/>
+            <Button x:Name="buttonHelp" Content="ℹ️" Command="Help"/>
+            <Button x:Name="buttonExit" Content="❌" Command="Close"/>
         </ToolBar>
         <StatusBar Height="35" Background="LightSeaGreen" DockPanel.Dock="Bottom">
             <TextBlock x:Name="textBlockCursorPosition" Width="300"/>
         </StatusBar>
         <Canvas x:Name="canvas" Background="Beige" MouseDown="canvas_MouseDown" 
                 MouseMove="canvas_MouseMove">
-            <Rectangle Height="250" Width="400" Canvas.Left="150" Canvas.Top="50" Stroke="Black">
-                <Rectangle.Fill>
-                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <Ellipse Height="230" Width="200" Canvas.Left="550" Canvas.Top="50" Stroke="Black">
+                <Ellipse.Fill>
+                    <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
                         <GradientStop Color="Aquamarine" Offset="0"/>
                         <GradientStop Color="Gold" Offset="0.7"/>
                         <GradientStop Color="White" Offset="0.3"/>
                         <GradientStop Color="RosyBrown" Offset="1"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-                <Rectangle.Triggers>
-                    <EventTrigger RoutedEvent="Rectangle.MouseDown">
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+                <Ellipse.Triggers>
+                    <EventTrigger RoutedEvent="Ellipse.MouseDown">
                         <BeginStoryboard>
                             <Storyboard >
-                                <ColorAnimation Storyboard.TargetProperty="Fill.GradientStops[1].Color" 
-                                                To="Red" Duration="0:0:2" AutoReverse="True" RepeatBehavior="Forever"/>
-                                <DoubleAnimation  Storyboard.TargetProperty="Fill.GradientStops[2].Offset"
-                                                  To="0.1" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>
-                                <!--<DoubleAnimation  Storyboard.TargetProperty="Width"
-                                                  To="50" Duration="0:0:5" AutoReverse="True" RepeatBehavior="Forever"/>
-                                <DoubleAnimation  Storyboard.TargetProperty="RadiusX"
-                                                  To="100" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>
-                                <DoubleAnimation  Storyboard.TargetProperty="RadiusY"
-                                                  To="100" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>-->
-
+                                <DoubleAnimation Storyboard.TargetProperty="Fill.RadiusX" 
+                                                To="0.8" Duration="0:0:2" AutoReverse="True" RepeatBehavior="Forever"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Fill.RadiusY" 
+                                                To="0.8" Duration="0:0:2" AutoReverse="True" RepeatBehavior="Forever"/>
+                                <PointAnimation Storyboard.TargetProperty="Fill.Center" 
+                                                To="0.7,0.7" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"/>
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
-                </Rectangle.Triggers>
-            </Rectangle>
+                </Ellipse.Triggers>
+            </Ellipse>
         </Canvas>
     </DockPanel>
 </Window>
