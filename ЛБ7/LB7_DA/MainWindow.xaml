@@ -1,0 +1,35 @@
+﻿<Window x:Class="LB7_DA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LB7_DA"
+        mc:Ignorable="d"
+        Title="Учет пациентов - DataAdapter" Height="550" Width="900">
+    <Grid Background="LightSkyBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="LightSteelBlue">
+            <Button Height="50" Margin="10" Click="ButtonView_Click">Просмотр</Button>
+            <Button Height="50" Margin="10" Click="ButtonUpdate_Click">Обновить</Button>
+            <Button Height="50" Margin="10" Click="ButtonFind_Click">Найти</Button>
+            <Button Height="50" Margin="10" Click="ButtonAdd_Click">Добавить</Button>
+            <Button Height="50" Margin="10" Click="ButtonDelete_Click">Удалить</Button>
+        </StackPanel>
+
+        <DataGrid AutoGenerateColumns="False" x:Name="patientGrid" Grid.Column="1" Margin="15" 
+                 Background="Beige" SelectionMode="Single" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" Width="50"/>
+                <DataGridTextColumn Binding="{Binding LastName}" Header="Фамилия" Width="120"/>
+                <DataGridTextColumn Binding="{Binding FirstName}" Header="Имя" Width="120"/>
+                <DataGridTextColumn Binding="{Binding Diagnosis}" Header="Диагноз" Width="150"/>
+                <DataGridTextColumn Binding="{Binding AdmissionDate}" Header="Дата поступления" Width="120"/>
+                <DataGridTextColumn Binding="{Binding DoctorInCharge}" Header="Лечащий врач" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

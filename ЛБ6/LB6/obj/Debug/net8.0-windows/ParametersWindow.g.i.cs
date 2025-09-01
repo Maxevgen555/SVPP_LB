@@ -76,7 +76,7 @@ namespace LB6 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LB6;component/parameterswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LB6;V1.0.0.0;component/parameterswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ParametersWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
